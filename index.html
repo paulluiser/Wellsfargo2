@@ -19,7 +19,7 @@
           boxShadow: {
             card: "0 8px 24px rgba(0,0,0,0.06)"
           }
-        }
+        }`
       }
     };
   </script>
@@ -37,237 +37,238 @@
       100% { background-position: 0% 50%; }
     }
   </style>
+  <style>  </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css">
-  <style>
-    /* FullCalendar Corporate Banking Theme - Red & White */
-    :root {
-      --fc-bg: #ffffff;
-      --fc-surface: #ffffff;
-      --fc-border: #f1f5f9;
-      --fc-muted: #94a3b8;
-      --fc-text: #111827;
-      --fc-primary: #D41C2C;
-      --fc-accent: #D41C2C;
+<style>
+/* FullCalendar Corporate Banking Theme - Red & White */
+:root {
+  --fc-bg: #ffffff;
+  --fc-surface: #ffffff;
+  --fc-border: #f1f5f9;
+  --fc-muted: #94a3b8;
+  --fc-text: #111827;
+  --fc-primary: #D41C2C;
+  --fc-accent: #D41C2C;
 
-      --fc-page-bg-color: #ffffff;
-      --fc-border-color: #f1f5f9;
-      --fc-neutral-bg-color: #ffffff;
-      --fc-neutral-text-color: #94a3b8;
-      --fc-today-bg-color: rgba(212, 28, 44, 0.08);
-      --fc-highlight-color: rgba(212, 28, 44, 0.12);
+  --fc-page-bg-color: #ffffff;
+  --fc-border-color: #f1f5f9;
+  --fc-neutral-bg-color: #ffffff;
+  --fc-neutral-text-color: #94a3b8;
+  --fc-today-bg-color: rgba(212, 28, 44, 0.08);
+  --fc-highlight-color: rgba(212, 28, 44, 0.12);
 
-      --fc-event-bg-color: #ffffff;
-      --fc-event-border-color: #f1f5f9;
-      --fc-event-text-color: #111827;
+  --fc-event-bg-color: #ffffff;
+  --fc-event-border-color: #f1f5f9;
+  --fc-event-text-color: #111827;
 
-      --fc-button-bg-color: #ffffff;
-      --fc-button-border-color: #f1f5f9;
-      --fc-button-text-color: #111827;
-      --fc-button-hover-bg-color: #fee2e2;
-      --fc-button-hover-border-color: #fecaca;
-      --fc-button-active-bg-color: #fecaca;
-      --fc-button-active-border-color: #fecaca;
-      --fc-button-active-text-color: #7f0c16;
+  --fc-button-bg-color: #ffffff;
+  --fc-button-border-color: #f1f5f9;
+  --fc-button-text-color: #111827;
+  --fc-button-hover-bg-color: #fee2e2;
+  --fc-button-hover-border-color: #fecaca;
+  --fc-button-active-bg-color: #fecaca;
+  --fc-button-active-border-color: #fecaca;
+  --fc-button-active-text-color: #7f0c16;
 
-      --fc-now-indicator-color: #D41C2C;
-    }
+  --fc-now-indicator-color: #D41C2C;
+}
 
-    .fc {
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      color: var(--fc-text);
-    }
+.fc {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--fc-text);
+}
 
-    .fc .fc-view-harness {
-      background: var(--fc-bg);
-      border: 1px solid var(--fc-border);
-      border-radius: 16px;
-      box-shadow: 0 6px 24px rgba(15, 23, 42, 0.04);
-      padding: 12px;
-    }
+.fc .fc-view-harness {
+  background: var(--fc-bg);
+  border: 1px solid var(--fc-border);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.04);
+  padding: 12px;
+}
 
-    .fc .fc-toolbar {
-      gap: 8px;
-      padding: 8px 4px 12px;
-    }
+.fc .fc-toolbar {
+  gap: 8px;
+  padding: 8px 4px 12px;
+}
 
-    .fc .fc-toolbar-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #D41C2C;
-    }
+.fc .fc-toolbar-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #D41C2C;
+}
 
-    .fc .fc-button {
-      border-radius: 10px;
-      padding: 6px 12px;
-      font-weight: 600;
-      font-size: 0.85rem;
-      box-shadow: none;
-      transition: all 0.15s ease;
-    }
+.fc .fc-button {
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: none;
+  transition: all 0.15s ease;
+}
 
-    .fc .fc-button:focus,
-    .fc .fc-button:focus-visible {
-      outline: none;
-      box-shadow: 0 0 0 3px rgba(212, 28, 44, 0.2);
-    }
+.fc .fc-button:focus,
+.fc .fc-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 28, 44, 0.2);
+}
 
-    .fc .fc-toolbar-chunk .fc-button-group > .fc-button {
-      border-radius: 10px;
-    }
+.fc .fc-toolbar-chunk .fc-button-group > .fc-button {
+  border-radius: 10px;
+}
 
-    .fc .fc-col-header-cell {
-      background: #ffffff;
-      color: #D41C2C;
-      font-weight: 600;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      border: none;
-      padding: 10px 0;
-    }
+.fc .fc-col-header-cell {
+  background: #ffffff;
+  color: #D41C2C;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: none;
+  padding: 10px 0;
+}
 
-    .fc .fc-daygrid-day {
-      border-color: var(--fc-border);
-      transition: background 0.2s ease;
-    }
+.fc .fc-daygrid-day {
+  border-color: var(--fc-border);
+  transition: background 0.2s ease;
+}
 
-    .fc .fc-daygrid-day-frame {
-      padding: 6px 6px 8px;
-      min-height: 96px;
-    }
+.fc .fc-daygrid-day-frame {
+  padding: 6px 6px 8px;
+  min-height: 96px;
+}
 
-    .fc .fc-daygrid-day-number {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--fc-text);
-      padding: 4px 6px;
-      border-radius: 8px;
-    }
+.fc .fc-daygrid-day-number {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--fc-text);
+  padding: 4px 6px;
+  border-radius: 8px;
+}
 
-    .fc .fc-daygrid-day.fc-day-today {
-      background: var(--fc-today-bg-color);
-    }
-    .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
-      color: #D41C2C;
-      background: rgba(212, 28, 44, 0.12);
-    }
+.fc .fc-daygrid-day.fc-day-today {
+  background: var(--fc-today-bg-color);
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+  color: #D41C2C;
+  background: rgba(212, 28, 44, 0.12);
+}
 
-    .fc .fc-daygrid-day.fc-day-sat,
-    .fc .fc-daygrid-day.fc-day-sun {
-      background: #ffffff;
-    }
+.fc .fc-daygrid-day.fc-day-sat,
+.fc .fc-daygrid-day.fc-day-sun {
+  background: #ffffff;
+}
 
-    .fc .fc-daygrid-day:hover {
-      background: rgba(212, 28, 44, 0.04);
-    }
+.fc .fc-daygrid-day:hover {
+  background: rgba(212, 28, 44, 0.04);
+}
 
-    .fc .fc-daygrid-event {
-      border-radius: 10px;
-      border: 1px solid var(--fc-border);
-      background: #ffffff;
-      box-shadow: 0 1px 6px rgba(15, 23, 42, 0.04);
-      padding: 2px 6px;
-      margin: 4px 0;
-      overflow: hidden;
-    }
+.fc .fc-daygrid-event {
+  border-radius: 10px;
+  border: 1px solid var(--fc-border);
+  background: #ffffff;
+  box-shadow: 0 1px 6px rgba(15, 23, 42, 0.04);
+  padding: 2px 6px;
+  margin: 4px 0;
+  overflow: hidden;
+}
 
-    .fc .fc-event-title {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--fc-text);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+.fc .fc-event-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--fc-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-    .fc .fc-event {
-      position: relative;
-    }
-    .fc .fc-event::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 6px;
-      bottom: 6px;
-      width: 4px;
-      border-radius: 4px;
-      background: #D41C2C;
-    }
+.fc .fc-event {
+  position: relative;
+}
+.fc .fc-event::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  border-radius: 4px;
+  background: #D41C2C;
+}
 
-    .fc .fc-highlight {
-      background: var(--fc-highlight-color);
-    }
+.fc .fc-highlight {
+  background: var(--fc-highlight-color);
+}
 
-    .fc .fc-list {
-      border: 1px solid var(--fc-border);
-      border-radius: 16px;
-      overflow: hidden;
-      background: #ffffff;
-      box-shadow: 0 6px 24px rgba(15, 23, 42, 0.04);
-    }
+.fc .fc-list {
+  border: 1px solid var(--fc-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.04);
+}
 
-    .fc .fc-list-day-cushion {
-      background: #ffffff;
-      color: var(--fc-muted);
-      font-weight: 600;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
+.fc .fc-list-day-cushion {
+  background: #ffffff;
+  color: var(--fc-muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
 
-    .fc .fc-list-event:hover td {
-      background: rgba(212, 28, 44, 0.06);
-    }
+.fc .fc-list-event:hover td {
+  background: rgba(212, 28, 44, 0.06);
+}
 
-    /* Calendar panel sizing */
-    #fullCalendar {
-      width: 100%;
-    }
-    #fullCalendar .fc .fc-view-harness {
-      padding: 12px;
-      border-radius: 12px;
-      background: #fafafa;
-    }
-    #fullCalendar .fc .fc-toolbar-title {
-      font-size: 1rem;
-    }
-    #fullCalendar .fc .fc-daygrid-day-frame {
-      min-height: 76px;
-      padding: 4px 4px 6px;
-    }
-    #fullCalendar .fc .fc-col-header-cell {
-      padding: 6px 0;
-      font-size: 0.68rem;
-    }
-    #fullCalendar .fc .fc-daygrid-event {
-      margin: 2px 0;
-      padding: 1px 5px;
-    }
-    #fullCalendar .fc .fc-event-title {
-      font-size: 0.7rem;
-    }
+/* Calendar panel sizing */
+#fullCalendar {
+  width: 100%;
+}
+#fullCalendar .fc .fc-view-harness {
+  padding: 12px;
+  border-radius: 12px;
+  background: #fafafa;
+}
+#fullCalendar .fc .fc-toolbar-title {
+  font-size: 1rem;
+}
+#fullCalendar .fc .fc-daygrid-day-frame {
+  min-height: 76px;
+  padding: 4px 4px 6px;
+}
+#fullCalendar .fc .fc-col-header-cell {
+  padding: 6px 0;
+  font-size: 0.68rem;
+}
+#fullCalendar .fc .fc-daygrid-event {
+  margin: 2px 0;
+  padding: 1px 5px;
+}
+#fullCalendar .fc .fc-event-title {
+  font-size: 0.7rem;
+}
 
-    @media (max-width: 768px) {
-      .fc .fc-toolbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .fc .fc-toolbar-title {
-        font-size: 1rem;
-      }
-      .fc .fc-daygrid-day-frame {
-        min-height: 80px;
-      }
-    }
-  </style>
-  <style>
-    .private-code-disclosure summary {
-      list-style: none;
-    }
-    .private-code-disclosure summary::-webkit-details-marker {
-      display: none;
-    }
-  </style>
+@media (max-width: 768px) {
+  .fc .fc-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fc .fc-toolbar-title {
+    font-size: 1rem;
+  }
+  .fc .fc-daygrid-day-frame {
+    min-height: 80px;
+  }
+}
+</style>
+<style>
+.private-code-disclosure summary {
+  list-style: none;
+}
+.private-code-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+</style>
 </head>
 <body class="bg-white text-slate-900 min-h-screen">
   <div id="app" class="min-h-screen">
@@ -352,14 +353,13 @@
         </div>
       </section>
 
-      <main class="max-w-7xl mx-auto px-6 md:px-10 py-12">
+<main class="max-w-7xl mx-auto px-6 md:px-10 py-12">
         <div class="flex items-center gap-3 mb-6">
           <span class="w-1 h-6 bg-wfRed rounded-full"></span>
           <h2 class="text-2xl font-semibold">Upcoming Events</h2>
         </div>
         <div id="eventGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       </main>
-
       <section class="max-w-7xl mx-auto px-6 md:px-10 pb-10">
         <div class="flex items-center justify-between gap-3 mb-6">
           <div class="flex items-center gap-3">
@@ -374,17 +374,16 @@
         <div class="relative overflow-hidden">
           <div id="catalogueCarousel" class="flex transition-transform duration-500"></div>
         </div>
-
-        <footer class="mt-10 bg-red-700 text-white">
-          <div class="w-full px-6 md:px-10 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm">
-            <div>© 2026 Wells Fargo Events. All rights reserved.</div>
-            <div class="flex items-center gap-4 text-white/80">
-              <span>Privacy</span>
-              <span>Terms</span>
-              <span>Support</span>
-            </div>
+      <footer class="mt-10 bg-red-700 text-white">
+        <div class="w-full px-6 md:px-10 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm">
+          <div>© 2026 Wells Fargo Events. All rights reserved.</div>
+          <div class="flex items-center gap-4 text-white/80">
+            <span>Privacy</span>
+            <span>Terms</span>
+            <span>Support</span>
           </div>
-        </footer>
+        </div>
+      </footer>
       </section>
     </section>
 
@@ -507,7 +506,6 @@
                       <option value="all">All Events</option>
                     </select>
                   </div>
-
                   <div class="bg-white rounded-2xl border border-slate-100 p-5 shadow-card">
                     <div class="flex items-center gap-2 mb-4">
                       <span class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-wfRed">
@@ -517,94 +515,1871 @@
                     </div>
                     <div id="topEventsList" class="space-y-2 text-sm max-h-52 overflow-auto"></div>
                   </div>
-
                   <div class="bg-white rounded-2xl border border-slate-100 p-5 shadow-card">
-                    <div class="flex items-center gap-3 mb-5">
-                      <span class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-wfRed flex-shrink-0">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
-                        </svg>
+                    <div class="flex items-center gap-2 mb-4">
+                      <span class="w-9 h-9 rounded-xl bg-green-100 flex items-center justify-center text-green-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7"/></svg>
                       </span>
-                      <div>
-                        <h4 class="font-semibold text-slate-800">Registrations per Event</h4>
-                        <p class="text-xs text-slate-500">Top 5 events by registration count</p>
-                      </div>
+                      <h4 class="font-semibold text-slate-800">Recent Check-ins</h4>
                     </div>
-                    <div class="h-64 flex items-center justify-center">
-                      <canvas id="registrationsChart" height="200"></canvas>
+                    <div id="recentCheckins" class="space-y-2 text-sm max-h-52 overflow-auto"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-2xl border border-slate-100 p-5 shadow-card">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                  <div class="flex items-center gap-2">
+                    <span class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-wfRed">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    </span>
+                    <h4 class="font-semibold text-slate-800">Registrations per Event</h4>
+                  </div>
+                  <select id="dashboardEventFilter" class="px-3 py-2 rounded-xl border border-slate-200 text-sm focus:border-wfRed focus:ring-1 focus:ring-wfRed/20 w-full sm:w-auto">
+                    <option value="all">All Events</option>
+                  </select>
+                </div>
+                <div class="mt-2">
+                  <canvas id="registrationsChart" height="220"></canvas>
+                </div>
+              </div>
+            </section>
+
+            <section id="tab-events" class="hidden space-y-6">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <h2 class="text-2xl font-semibold">Events</h2>
+                <button id="createEventBtn" class="px-4 py-2 rounded-lg bg-wfRed hover:bg-red-700 text-white font-semibold transition">+ Create New Event</button>
+              </div>
+              <div id="eventsList" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            </section>
+
+            <section id="tab-participants" class="hidden space-y-5">
+              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
+                <div>
+                  <h2 class="text-2xl font-semibold">Participants</h2>
+                  <p class="text-sm text-slate-500">Search and filter registrations.</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-2">
+                  <input id="participantSearch" type="text" placeholder="Search by name or email" class="px-4 py-2 rounded-lg border border-slate-200" />
+                  <select id="participantStatus" class="px-4 py-2 rounded-lg border border-slate-200">
+                    <option value="all">All Status</option>
+                    <option value="Registered">Registered</option>
+                    <option value="Attended">Attended</option>
+                  </select>
+                  <select id="participantEvent" class="px-4 py-2 rounded-lg border border-slate-200"></select>
+                </div>
+              </div>
+              <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="overflow-auto max-h-[560px]">
+                <table class="min-w-full text-sm">
+                  <thead class="bg-slate-50 text-slate-600 sticky top-0 z-10 border-b border-slate-200">
+                    <tr>
+                      <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Full Name</th>
+                      <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Email</th>
+                      <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Employee Code</th>
+                      <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Phone</th>
+                      <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Event</th>
+                      <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Date</th>
+                      <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Status</th>
+                      <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Reg ID</th>
+                    </tr>
+                  </thead>
+                  <tbody id="participantsTable" class="divide-y divide-slate-100"></tbody>
+                </table>
+                </div>
+              </div>
+            </section>
+
+            <section id="tab-scanner" class="hidden space-y-6">
+              <div class="bg-white rounded-xl shadow-sm p-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <div>
+                    <h2 class="text-2xl font-semibold">Live monitoring</h2>
+                    <p class="text-sm text-slate-500">Real-time event info and participant activity.</p>
+                  </div>
+                  <div class="flex items-center gap-3 text-sm text-slate-500">
+                    <span class="inline-flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                      Live
+                    </span>
+                    <span id="liveMonitoringUpdated">Last updated: —</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 p-4 rounded-xl border border-slate-100 bg-slate-50/60">
+                  <h3 class="text-sm font-semibold text-slate-700 uppercase tracking-wide">Current event info</h3>
+                  <div class="mt-2 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div>
+                      <p class="text-xs text-slate-500">Active event</p>
+                      <p id="liveMonitoringEvent" class="font-semibold text-slate-900">—</p>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-500">Checked in</p>
+                      <p id="liveMonitoringCheckedIn" class="font-semibold text-slate-900">0</p>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-500">Expected</p>
+                      <p id="liveMonitoringExpected" class="font-semibold text-slate-900">0</p>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-500">Status</p>
+                      <p class="font-semibold text-green-600">In progress</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                    <h3 class="text-sm font-semibold text-slate-700">Participant list</h3>
+                    <input id="liveMonitoringSearch" type="text" placeholder="Search by name, email, or employee code…" class="w-full sm:max-w-xs px-4 py-2 rounded-lg border border-slate-200 text-sm focus:border-wfRed focus:outline-none focus:ring-1 focus:ring-wfRed" />
+                  </div>
+                  <div class="rounded-xl border border-slate-200 overflow-hidden">
+                    <div class="overflow-auto max-h-[420px]">
+                      <table class="min-w-full text-sm">
+                        <thead class="bg-slate-50 text-slate-600 sticky top-0 z-10 border-b border-slate-200">
+                          <tr>
+                            <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Name</th>
+                            <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Email</th>
+                            <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Employee code</th>
+                            <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Event</th>
+                            <th class="text-left px-4 py-3 text-xs font-semibold uppercase tracking-wide">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody id="liveMonitoringTable" class="divide-y divide-slate-100"></tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
 
-            <!-- Other admin tab sections would go here – kept unchanged -->
+            <section id="tab-catalogue" class="hidden space-y-6">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <div>
+                  <h2 class="text-2xl font-semibold">Catalogue</h2>
+                  <p class="text-sm text-slate-500">Add past events to the catalogue, or remove them when no longer needed.</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button id="openCatalogueLookupBtn" class="px-4 py-2 rounded-lg border border-red-200 text-red-700 hover:bg-red-50 font-semibold transition">Lookup Events</button>
+                  <button id="addCatalogueBtn" class="px-4 py-2 rounded-lg bg-wfRed hover:bg-red-700 text-white font-semibold transition">+ Add Past Event</button>
+                </div>
+              </div>
+              <div id="catalogueAdminGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            </section>
 
+                        
+
+            <section id="tab-calendar" class="hidden space-y-6">
+              <div class="border-l-4 border-wfRed pl-5">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Calendar</h2>
+                <p class="text-sm text-slate-500 mt-0.5">Interactive calendar with event markers and day details</p>
+              </div>
+              <div class="grid lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-2 bg-white rounded-2xl border border-slate-100 shadow-card p-5 md:p-6">
+                  <div class="flex items-center gap-2 mb-4">
+                    <span class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-wfRed">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </span>
+                    <h3 class="font-semibold text-slate-800">Month view</h3>
+                  </div>
+                  <div id="fullCalendar"></div>
+                </div>
+                <div class="space-y-5">
+                  <div class="bg-white rounded-2xl border border-slate-100 shadow-card p-5">
+                    <div class="flex items-center justify-between mb-3">
+                      <h3 class="font-semibold text-slate-800">Selected date</h3>
+                      <span id="calendarSelectedDate" class="text-xs font-medium text-wfRed bg-red-50 px-2.5 py-1 rounded-lg">—</span>
+                    </div>
+                    <h4 class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-3">Events on this day</h4>
+                    <div id="calendarEventList" class="space-y-3 text-sm"></div>
+                  </div>
+                  <div class="bg-white rounded-2xl border border-slate-100 shadow-card p-5">
+                    <h4 class="text-xs font-medium text-slate-500 uppercase tracking-wider mb-3">Participants</h4>
+                    <input id="calendarParticipantSearch" class="w-full mb-3 px-3 py-2.5 rounded-xl border border-slate-200 text-sm placeholder:text-slate-400 focus:border-wfRed focus:ring-1 focus:ring-wfRed/20" placeholder="Search by name or email…" />
+                    <div id="calendarParticipantList" class="space-y-2 text-sm max-h-64 overflow-auto"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+<section id="tab-reports" class="hidden">
+              <div class="bg-white rounded-xl shadow-sm p-6">
+                <h2 class="text-2xl font-semibold">Reports</h2>
+                <p class="mt-2 text-slate-600">Generate export-ready summaries.</p>
+                <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div class="border border-slate-200 rounded-xl p-4">
+                    <p class="font-semibold">Event summary report</p>
+                    <button class="mt-3 px-3 py-2 rounded-lg bg-slate-100 text-sm">Generate</button>
+                  </div>
+                  <div class="border border-slate-200 rounded-xl p-4">
+                    <p class="font-semibold">Participant master list</p>
+                    <button class="mt-3 px-3 py-2 rounded-lg bg-slate-100 text-sm">Generate</button>
+                  </div>
+                  <div class="border border-slate-200 rounded-xl p-4">
+                    <p class="font-semibold">Checked-in attendance report</p>
+                    <button class="mt-3 px-3 py-2 rounded-lg bg-slate-100 text-sm">Generate</button>
+                  </div>
+                  <div class="border border-slate-200 rounded-xl p-4">
+                    <p class="font-semibold">Absentees / no-show report</p>
+                    <button class="mt-3 px-3 py-2 rounded-lg bg-slate-100 text-sm">Generate</button>
+                  </div>
+                  <div class="border border-slate-200 rounded-xl p-4">
+                    <p class="font-semibold">Registration timeline report</p>
+                    <button class="mt-3 px-3 py-2 rounded-lg bg-slate-100 text-sm">Generate</button>
+                  </div>
+                  <div class="border border-slate-200 rounded-xl p-4">
+                    <p class="font-semibold">Participant demographics report</p>
+                    <button class="mt-3 px-3 py-2 rounded-lg bg-slate-100 text-sm">Generate</button>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- Floating controls -->
+  <div class="fixed bottom-5 right-5 z-50">
+    <div class="bg-white shadow-sm rounded-full px-3 py-2 flex items-center gap-2">
+      <span class="text-xs font-semibold text-red-700">Participant</span>
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input id="roleToggle" type="checkbox" class="sr-only peer" />
+        <div class="w-11 h-6 bg-red-100 rounded-full peer peer-checked:bg-wfRed transition"></div>
+        <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition peer-checked:translate-x-5"></div>
+      </label>
+      <span class="text-xs font-semibold text-red-700">Admin</span>
+    </div>
+  </div>
+  <div class="fixed bottom-5 left-5 z-50">
+    <div class="px-3 py-2 rounded-full text-xs text-slate-500 bg-white shadow-sm">Demo Mode — No Backend</div>
+  </div>
+
+  <!-- Modals -->
+  <div id="modalBackdrop" class="fixed inset-0 bg-black/40 hidden items-center justify-center z-40"></div>
+
+  <div id="eventModal" class="fixed inset-0 hidden items-center justify-center z-50">
+    <div class="relative bg-white rounded-2xl shadow-card w-full max-w-3xl mx-4 overflow-hidden">
+      <button class="absolute z-10 right-6 top-5 text-slate-500 hover:text-red-700 text-xl leading-none" onclick="closeModal('eventModal')" aria-label="Close event details">×</button>
+      <div id="eventModalImage" class="h-52 bg-cover bg-center"></div>
+      <div id="eventModalBody" class="p-6 grid md:grid-cols-2 gap-6">
+        <div id="eventModalInfoPanel" class="space-y-3 flex flex-col">
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 id="eventModalTitle" class="text-2xl font-semibold"></h3>
+              <p id="eventModalMeta" class="text-sm text-slate-500"></p>
+            </div>
+            <button class="text-slate-400 md:hidden" onclick="closeModal('eventModal')">✕</button>
+          </div>
+          <p id="eventModalDesc" class="text-slate-600"></p>
+          <p class="text-base text-slate-700"><span class="font-bold text-red-700">Total Participants:</span> <span id="eventModalParticipants" class="font-bold text-slate-900">0</span></p>
+        </div>
+        <div id="eventModalRegisterPanel">
+          <div class="flex items-center justify-between">
+            <h4 class="text-lg font-semibold">Register</h4>
+            <button class="text-slate-400 hidden md:block" onclick="closeModal('eventModal')">✕</button>
+          </div>
+          <form id="registerForm" class="mt-4 space-y-3">
+            <div class="relative">
+              <input required name="fullName" type="text" class="peer w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-red-600 focus:outline-none" />
+              <label class="absolute left-4 top-3 text-slate-400 text-sm transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-red-600 peer-valid:-top-2 peer-valid:text-xs">Full Name</label>
+            </div>
+            <div class="relative">
+              <input required name="email" type="email" class="peer w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-red-600 focus:outline-none" />
+              <label class="absolute left-4 top-3 text-slate-400 text-sm transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-red-600 peer-valid:-top-2 peer-valid:text-xs">Email</label>
+            </div>
+            <div class="relative">
+              <input required name="employeeCode" type="text" class="peer w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-red-600 focus:outline-none" />
+              <label class="absolute left-4 top-3 text-slate-400 text-sm transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-red-600 peer-valid:-top-2 peer-valid:text-xs">Employee Code</label>
+            </div>
+            <div class="relative">
+              <input required name="phone" type="text" class="peer w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-red-600 focus:outline-none" />
+              <label class="absolute left-4 top-3 text-slate-400 text-sm transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-red-600 peer-valid:-top-2 peer-valid:text-xs">Phone</label>
+            </div>
+            <button type="submit" class="w-full mt-2 px-4 py-2 rounded-lg bg-wfRed hover:bg-red-700 text-white font-semibold transition">Submit Registration</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="qrModal" class="fixed inset-0 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-3xl border border-slate-100 shadow-card w-full max-w-xl mx-4 overflow-hidden">
+      <div class="animated-material px-6 py-8 text-white text-center">
+        <h3 class="text-2xl font-semibold">Registration Complete</h3>
+      </div>
+      <div class="p-6 text-center">
+        <div class="mx-auto -mt-14 mb-4 w-16 h-16 rounded-full bg-white shadow-lg border border-slate-100 flex items-center justify-center text-wfRed">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+            <path d="M20 6 9 17l-5-5"/>
+          </svg>
+        </div>
+        <h4 id="qrParticipant" class="text-lg font-semibold text-slate-900"></h4>
+        <p id="qrEvent" class="text-slate-600 mt-1"></p>
+        <div class="mt-5 p-4 rounded-xl border border-red-100 bg-red-50 text-left space-y-2">
+          <p class="text-sm text-slate-700">A confirmation email has been sent to the address you provided.</p>
+          <p class="text-sm text-slate-700">Just tap your employee ID to the device in the event venue during the event period to mark attendance.</p>
+        </div>
+        <button class="mt-6 w-full px-5 py-3 rounded-xl bg-wfRed hover:bg-red-700 text-white font-semibold transition" onclick="closeQrModal()">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="adminEventModal" class="fixed inset-0 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-2xl shadow-card w-full max-w-3xl mx-4 overflow-hidden">
+      <div class="p-6">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 id="adminEventTitle" class="text-2xl font-semibold"></h3>
+            <p id="adminEventMeta" class="text-sm text-slate-500"></p>
+          </div>
+          <button class="text-slate-400" onclick="closeModal('adminEventModal')">✕</button>
+        </div>
+        <p id="adminEventDesc" class="mt-3 text-slate-600"></p>
+        <div class="mt-4 flex items-center gap-2">
+          <button id="adminEventToggleBtn" class="px-3 py-2 rounded-lg border border-slate-200 text-sm"></button>
+          <button id="adminEventEditBtn" class="px-3 py-2 rounded-lg bg-wfRed text-white text-sm font-semibold">Edit</button>
+          <button id="adminEventDeleteBtn" class="px-3 py-2 rounded-lg text-sm text-slate-500">Delete</button>
+        </div>
+        <div class="mt-6 border-t border-slate-100 pt-4">
+          <h4 class="font-semibold mb-2">Participants</h4>
+          <div class="overflow-auto max-h-56">
+            <table class="min-w-full text-xs">
+              <thead class="bg-slate-50 text-slate-500">
+                <tr>
+                  <th class="text-left px-3 py-2">Name</th>
+                  <th class="text-left px-3 py-2">Email</th>
+                  <th class="text-left px-3 py-2">Status</th>
+                </tr>
+              </thead>
+              <tbody id="adminEventParticipants" class="divide-y divide-slate-100"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="createEventModal" class="fixed inset-0 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-2xl shadow-card w-full max-w-2xl mx-4">
+      <div class="p-6">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold">Create New Event</h3>
+            <p class="text-sm text-slate-500">Build a new listing for participants.</p>
+          </div>
+          <button class="text-slate-400" onclick="closeModal('createEventModal')">✕</button>
+        </div>
+        <form id="createEventForm" class="mt-4 space-y-3">
+          <input required name="title" type="text" placeholder="Event Title" class="w-full px-4 py-2 rounded-lg border border-slate-200" />
+          <input required name="datetime" type="text" placeholder="Event Date (e.g. Mar 18, 2026)" class="w-full px-4 py-2 rounded-lg border border-slate-200" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <input required name="startTime" type="text" placeholder="Start Time (e.g. 9:00 AM)" class="w-full px-4 py-2 rounded-lg border border-slate-200" />
+            <input required name="endTime" type="text" placeholder="End Time (e.g. 10:30 AM)" class="w-full px-4 py-2 rounded-lg border border-slate-200" />
+          </div>
+          <input required name="location" type="text" placeholder="Location" class="w-full px-4 py-2 rounded-lg border border-slate-200" />
+          <textarea required name="description" placeholder="Description" class="w-full px-4 py-2 rounded-lg border border-slate-200" rows="3"></textarea>
+          <div>
+            <label class="text-sm font-semibold">Upload event cover image</label>
+            <div id="imagePreview" class="mt-2 h-32 rounded-xl border border-dashed border-slate-200 flex items-center justify-center text-slate-400">Preview Area</div>
+            <input id="coverInput" name="cover" type="file" accept="image/*" class="mt-2 w-full text-sm" />
+          </div>
+          <label class="flex items-center gap-2 text-sm">
+            <input id="privateCheckbox" type="checkbox" class="rounded" />
+            This is a private event
+          </label>
+          <input id="privateCodeField" name="code" type="text" placeholder="Event Code" class="w-full px-4 py-2 rounded-lg border border-slate-200 hidden" />
+          <button type="submit" class="w-full mt-2 px-4 py-2 rounded-lg bg-wfRed hover:bg-red-700 text-white font-semibold transition">Create Event</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="catalogueModal" class="fixed inset-0 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-2xl shadow-card w-full max-w-2xl mx-4">
+      <div class="p-6">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold">Add Past Event</h3>
+            <p class="text-sm text-slate-500">Publish a past event to the catalogue.</p>
+          </div>
+          <button class="text-slate-400" onclick="closeModal('catalogueModal')">✕</button>
+        </div>
+        <form id="catalogueForm" class="mt-4 space-y-3">
+          <input required name="title" type="text" placeholder="Event Title" class="w-full px-4 py-2 rounded-lg border border-slate-200" />
+          <input required name="date" type="text" placeholder="Event Date" class="w-full px-4 py-2 rounded-lg border border-slate-200" />
+          <input required name="location" type="text" placeholder="Location" class="w-full px-4 py-2 rounded-lg border border-slate-200" />
+          <textarea required name="summary" placeholder="Short Summary" class="w-full px-4 py-2 rounded-lg border border-slate-200" rows="3"></textarea>
+          <div>
+            <label class="text-sm font-semibold">Attach image</label>
+            <div id="cataloguePreview" class="mt-2 h-32 rounded-xl border border-dashed border-slate-200 flex items-center justify-center text-slate-400">Preview Area</div>
+            <input id="catalogueImageInput" name="image" type="file" accept="image/*" class="mt-2 w-full text-sm" />
+          </div>
+          <button type="submit" class="w-full mt-2 px-4 py-2 rounded-lg bg-wfRed hover:bg-red-700 text-white font-semibold transition">Add to Catalogue</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="catalogueLookupModal" class="fixed inset-0 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-2xl shadow-card w-full max-w-3xl mx-4">
+      <div class="p-6">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <h3 class="text-2xl font-semibold">Lookup Events</h3>
+            <p class="text-sm text-slate-500">Search existing events and add them to the past events catalogue.</p>
+          </div>
+          <button class="text-slate-400 text-xl leading-none" onclick="closeModal('catalogueLookupModal')" aria-label="Close">×</button>
+        </div>
+        <div class="mt-4">
+          <input id="catalogueLookupSearch" type="text" placeholder="Search by title, location, or date" class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-red-600 focus:outline-none" />
+        </div>
+        <div id="catalogueLookupList" class="mt-4 max-h-[420px] overflow-auto space-y-3 pr-1"></div>
+      </div>
+    </div>
+  </div>
+
   <script>
-    // ───────────────────────────────────────────────
-    //  STATE & HELPERS (kept mostly original)
-    // ───────────────────────────────────────────────
-    let state = {
-      events: [],
-      registrations: [],
-      catalogue: []
+    const STORAGE_KEY = "wf_events_demo";
+    const today = new Date().toLocaleDateString();
+
+    const seedData = {
+      events: [
+        {
+          id: "EVT-1001",
+          title: "Wells Fargo Leadership Summit",
+          datetime: "Jan 10, 2026 · 9:00 AM",
+          location: "San Francisco Conference Center",
+          description: "Executive insights, leadership workshops, and strategy alignment for 2026.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf1/900/600"
+        },
+        {
+          id: "EVT-1002",
+          title: "Private Wealth Client Gala",
+          datetime: "Jan 18, 2026 · 2:00 PM",
+          location: "Charlotte Grand Hall",
+          description: "An invitation-only evening with executive updates and premium client networking.",
+          type: "Private",
+          code: "GALA2026",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf2/900/600"
+        },
+        {
+          id: "EVT-1003",
+          title: "Digital Banking Innovation Forum",
+          datetime: "Jan 25, 2026 · 11:00 AM",
+          location: "New York Tech Hub",
+          description: "Explore the next generation of digital banking experiences and product roadmaps.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf3/900/600"
+        },
+        {
+          id: "EVT-1004",
+          title: "Internal Team Strategy Day",
+          datetime: "Feb 2, 2026 · 10:00 AM",
+          location: "Minneapolis Operations Center",
+          description: "Internal planning session for department leads and strategic partners.",
+          type: "Private",
+          code: "TEAM2026",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf4/900/600"
+        }
+        ,
+        {
+          id: "EVT-1005",
+          title: "Retail Banking Experience Lab",
+          datetime: "Feb 6, 2026 · 1:30 PM",
+          location: "Dallas Innovation Hub",
+          description: "Hands-on demos and customer journey mapping for branch transformation.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf5/900/600"
+        },
+        {
+          id: "EVT-1006",
+          title: "Risk & Compliance Roundtable",
+          datetime: "Feb 10, 2026 · 9:30 AM",
+          location: "Phoenix Operations Center",
+          description: "Peer discussions on risk management and regulatory readiness across teams.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf6/900/600"
+        },
+        {
+          id: "EVT-1007",
+          title: "Commercial Lending Summit",
+          datetime: "Feb 14, 2026 · 3:00 PM",
+          location: "Chicago Riverfront Center",
+          description: "Market outlooks, lending strategy updates, and partner collaboration sessions.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf7/900/600"
+        },
+        {
+          id: "EVT-1008",
+          title: "Women in Finance Leadership Day",
+          datetime: "Feb 20, 2026 · 10:00 AM",
+          location: "Atlanta Midtown Campus",
+          description: "Leadership talks, mentorship circles, and networking for future executives.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf8/900/600"
+        }
+        ,
+        {
+          id: "EVT-1009",
+          title: "Customer Experience Design Studio",
+          datetime: "Feb 24, 2026 · 11:00 AM",
+          location: "Los Angeles Innovation Lab",
+          description: "Service design sprints focused on frictionless customer journeys.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf9/900/600"
+        },
+        {
+          id: "EVT-1010",
+          title: "Sustainability & Impact Forum",
+          datetime: "Mar 2, 2026 · 9:00 AM",
+          location: "Denver Civic Center",
+          description: "Updates on ESG strategy, community investment, and climate initiatives.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf10/900/600"
+        },
+        {
+          id: "EVT-1011",
+          title: "Small Business Growth Summit",
+          datetime: "Mar 6, 2026 · 2:00 PM",
+          location: "Houston Innovation Hall",
+          description: "Workshops on lending, treasury, and advisory services for SMB partners.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf11/900/600"
+        },
+        {
+          id: "EVT-1012",
+          title: "Operations Excellence Bootcamp",
+          datetime: "Mar 10, 2026 · 10:00 AM",
+          location: "St. Louis Operations Center",
+          description: "Lean process optimization sessions and performance insights for teams.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf12/900/600"
+        },
+        {
+          id: "EVT-1013",
+          title: "Digital Security & Trust Conference",
+          datetime: "Mar 14, 2026 · 1:00 PM",
+          location: "Seattle Tech Center",
+          description: "Security leaders share best practices for protecting digital banking clients.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf13/900/600"
+        }
+        ,
+        {
+          id: "EVT-1014",
+          title: "Treasury Management Summit",
+          datetime: "Mar 18, 2026 · 9:30 AM",
+          location: "Orlando Conference Center",
+          description: "Strategic sessions on liquidity, payments, and corporate cash management.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf14/900/600"
+        },
+        {
+          id: "EVT-1015",
+          title: "Analytics & AI Roadmap",
+          datetime: "Mar 22, 2026 · 11:00 AM",
+          location: "Boston Innovation Lab",
+          description: "Explore AI-driven insights, automation, and analytics for banking teams.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf15/900/600"
+        },
+        {
+          id: "EVT-1016",
+          title: "Client Advisory Forum",
+          datetime: "Mar 26, 2026 · 2:30 PM",
+          location: "Miami Financial District",
+          description: "Client advisory sessions and strategic discussions for relationship leaders.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf16/900/600"
+        }
+      ],
+      catalogue: [
+        {
+          id: "CAT-1001",
+          title: "2025 Strategy Leadership Forum",
+          date: "Nov 12, 2025",
+          location: "New York City",
+          summary: "Executive sessions on 2026 priorities, leadership alignment, and strategic initiatives.",
+          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          id: "CAT-1002",
+          title: "Digital Banking Showcase",
+          date: "Oct 3, 2025",
+          location: "San Francisco",
+          summary: "Product demonstrations and innovation briefings from digital banking teams.",
+          image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          id: "CAT-1003",
+          title: "Community Impact Day",
+          date: "Sep 18, 2025",
+          location: "Charlotte",
+          summary: "Volunteer initiatives and impact workshops across regional markets.",
+          image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          id: "CAT-1004",
+          title: "Operations Excellence Summit",
+          date: "Aug 7, 2025",
+          location: "Minneapolis",
+          summary: "Best practices and operational improvements shared by cross-functional teams.",
+          image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+        }
+        ,
+        {
+          id: "EVT-1017",
+          title: "Mortgage Insights Summit",
+          datetime: "Mar 30, 2026 · 10:00 AM",
+          location: "Philadelphia Financial Center",
+          description: "Trends and customer insights shaping the next generation of home lending.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf17/900/600"
+        },
+        {
+          id: "EVT-1018",
+          title: "Wealth Management Outlook",
+          datetime: "Jan 10, 2026 · 9:00 AM",
+          location: "San Diego Harbor Center",
+          description: "Investment market outlooks and advisory best practices for 2027.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf18/900/600"
+        },
+        {
+          id: "EVT-1019",
+          title: "Branch Modernization Lab",
+          datetime: "Jan 18, 2026 · 2:00 PM",
+          location: "Austin Innovation Center",
+          description: "Future branch design, digital-first service, and customer experience trials.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf19/900/600"
+        },
+        {
+          id: "EVT-1020",
+          title: "Enterprise Data Governance Forum",
+          datetime: "Jan 25, 2026 · 11:00 AM",
+          location: "Columbus Tech Campus",
+          description: "Policies, stewardship, and quality standards for enterprise data teams.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf20/900/600"
+        },
+        {
+          id: "EVT-1021",
+          title: "Payments Innovation Showcase",
+          datetime: "Feb 2, 2026 · 10:00 AM",
+          location: "Nashville Convention Center",
+          description: "New payment rails, fraud prevention, and client experience upgrades.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf21/900/600"
+        },
+        {
+          id: "EVT-1022",
+          title: "Retail Banking Town Hall",
+          datetime: "Feb 6, 2026 · 1:30 PM",
+          location: "Las Vegas Operations Center",
+          description: "Leadership updates and regional priorities for retail banking teams.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf22/900/600"
+        },
+        {
+          id: "EVT-1023",
+          title: "Private Banking Leaders Forum",
+          datetime: "Feb 10, 2026 · 9:30 AM",
+          location: "Palm Beach Private Club",
+          description: "Invitation-only strategy sessions for private banking leadership.",
+          type: "Private",
+          code: "PB2027",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf23/900/600"
+        },
+        {
+          id: "EVT-1024",
+          title: "Small Business Digital Clinic",
+          datetime: "Feb 14, 2026 · 3:00 PM",
+          location: "Portland Innovation Hub",
+          description: "Workshops on digital tools, payment solutions, and SMB growth.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf24/900/600"
+        },
+        {
+          id: "EVT-1025",
+          title: "Risk Analytics Deep Dive",
+          datetime: "Feb 20, 2026 · 10:00 AM",
+          location: "Raleigh Analytics Center",
+          description: "Advanced risk analytics techniques for credit and operational teams.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf25/900/600"
+        },
+        {
+          id: "EVT-1026",
+          title: "Client Experience Studio",
+          datetime: "Feb 24, 2026 · 11:00 AM",
+          location: "Tampa Experience Lab",
+          description: "Service design and prototyping to improve client onboarding.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf26/900/600"
+        },
+        {
+          id: "EVT-1027",
+          title: "Commercial Real Estate Briefing",
+          datetime: "Mar 2, 2026 · 9:00 AM",
+          location: "Denver Business Center",
+          description: "Market outlooks and portfolio strategies for CRE leaders.",
+          type: "Public",
+          code: "",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf27/900/600"
+        },
+        {
+          id: "EVT-1028",
+          title: "Internal Ops Strategy Summit",
+          datetime: "Mar 6, 2026 · 2:00 PM",
+          location: "Salt Lake City HQ",
+          description: "Internal alignment on operations priorities and process improvements.",
+          type: "Private",
+          code: "OPS2027",
+          hidden: false,
+          cover: "https://picsum.photos/seed/wf28/900/600"
+        }
+        ,
+        {
+          id: "CAT-1005",
+          title: "2024 Client Innovation Expo",
+          date: "Oct 10, 2024",
+          location: "Chicago",
+          summary: "Showcased new client-facing tools and digital onboarding enhancements.",
+          image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          id: "CAT-1006",
+          title: "2024 Operations Leadership Day",
+          date: "Sep 6, 2024",
+          location: "Dallas",
+          summary: "Operational excellence and shared services collaboration sessions.",
+          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          id: "CAT-1007",
+          title: "2023 Digital Banking Week",
+          date: "Nov 14, 2023",
+          location: "San Jose",
+          summary: "Product roadmaps and innovation sprints across digital banking teams.",
+          image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          id: "CAT-1008",
+          title: "2023 Risk & Compliance Forum",
+          date: "Aug 22, 2023",
+          location: "Phoenix",
+          summary: "Regulatory updates and cross-functional readiness planning.",
+          image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          id: "CAT-1009",
+          title: "2022 Community Impact Summit",
+          date: "Sep 16, 2022",
+          location: "Charlotte",
+          summary: "Community investment highlights and volunteer program showcases.",
+          image: "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=900&q=80"
+        },
+        {
+          id: "CAT-1010",
+          title: "2022 Wealth Advisory Symposium",
+          date: "Jul 8, 2022",
+          location: "New York",
+          summary: "Wealth advisory strategy sessions and market insight panels.",
+          image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+        }      ],
+      registrations: [
+        {
+          id: "REG-2026-100201",
+          eventId: "EVT-1001",
+          name: "Avery Jordan",
+          email: "avery.jordan@wellsfargo.com",
+          employeeCode: "WF-4821",
+          phone: "(415) 555-0198",
+          date: "Feb 2, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100202",
+          eventId: "EVT-1002",
+          name: "Maya Singh",
+          email: "maya.singh@wellsfargo.com",
+          employeeCode: "WF-6614",
+          phone: "(704) 555-0112",
+          date: "Feb 4, 2026",
+          status: "Attended"
+        },
+        {
+          id: "REG-2026-100203",
+          eventId: "EVT-1003",
+          name: "Lucas Bennett",
+          email: "lucas.bennett@wellsfargo.com",
+          employeeCode: "WF-3390",
+          phone: "(212) 555-0181",
+          date: "Feb 5, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100204",
+          eventId: "EVT-1004",
+          name: "Priya Patel",
+          email: "priya.patel@wellsfargo.com",
+          employeeCode: "WF-9921",
+          phone: "(612) 555-0130",
+          date: "Feb 6, 2026",
+          status: "Attended"
+        },
+        {
+          id: "REG-2026-100205",
+          eventId: "EVT-1001",
+          name: "Daniel Rivera",
+          email: "daniel.rivera@wellsfargo.com",
+          employeeCode: "WF-1044",
+          phone: "(415) 555-0172",
+          date: "Feb 7, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100206",
+          eventId: "EVT-1002",
+          name: "Jasmine Cole",
+          email: "jasmine.cole@wellsfargo.com",
+          employeeCode: "WF-5543",
+          phone: "(704) 555-0140",
+          date: "Feb 8, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100207",
+          eventId: "EVT-1003",
+          name: "Oliver Moore",
+          email: "oliver.moore@wellsfargo.com",
+          employeeCode: "WF-7782",
+          phone: "(212) 555-0190",
+          date: "Feb 9, 2026",
+          status: "Attended"
+        }
+        ,
+        {
+          id: "REG-2026-100208",
+          eventId: "EVT-1005",
+          name: "Sophia Turner",
+          email: "sophia.turner@wellsfargo.com",
+          employeeCode: "WF-2190",
+          phone: "(214) 555-0101",
+          date: "Feb 10, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100209",
+          eventId: "EVT-1006",
+          name: "Ethan Brooks",
+          email: "ethan.brooks@wellsfargo.com",
+          employeeCode: "WF-3321",
+          phone: "(602) 555-0182",
+          date: "Feb 11, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100210",
+          eventId: "EVT-1007",
+          name: "Isabella Lee",
+          email: "isabella.lee@wellsfargo.com",
+          employeeCode: "WF-4750",
+          phone: "(312) 555-0155",
+          date: "Feb 12, 2026",
+          status: "Attended"
+        },
+        {
+          id: "REG-2026-100211",
+          eventId: "EVT-1008",
+          name: "Noah Kim",
+          email: "noah.kim@wellsfargo.com",
+          employeeCode: "WF-8843",
+          phone: "(404) 555-0119",
+          date: "Feb 12, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100212",
+          eventId: "EVT-1009",
+          name: "Emma Davis",
+          email: "emma.davis@wellsfargo.com",
+          employeeCode: "WF-9021",
+          phone: "(213) 555-0127",
+          date: "Feb 13, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100213",
+          eventId: "EVT-1010",
+          name: "Liam Patel",
+          email: "liam.patel@wellsfargo.com",
+          employeeCode: "WF-5591",
+          phone: "(303) 555-0178",
+          date: "Feb 14, 2026",
+          status: "Attended"
+        },
+        {
+          id: "REG-2026-100214",
+          eventId: "EVT-1011",
+          name: "Ava Nelson",
+          email: "ava.nelson@wellsfargo.com",
+          employeeCode: "WF-2234",
+          phone: "(713) 555-0191",
+          date: "Feb 15, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100215",
+          eventId: "EVT-1012",
+          name: "James Moore",
+          email: "james.moore@wellsfargo.com",
+          employeeCode: "WF-6167",
+          phone: "(314) 555-0133",
+          date: "Feb 16, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100216",
+          eventId: "EVT-1013",
+          name: "Charlotte Reed",
+          email: "charlotte.reed@wellsfargo.com",
+          employeeCode: "WF-7710",
+          phone: "(206) 555-0199",
+          date: "Feb 17, 2026",
+          status: "Attended"
+        },
+        {
+          id: "REG-2026-100217",
+          eventId: "EVT-1014",
+          name: "Benjamin Cruz",
+          email: "benjamin.cruz@wellsfargo.com",
+          employeeCode: "WF-3388",
+          phone: "(407) 555-0108",
+          date: "Feb 18, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100218",
+          eventId: "EVT-1015",
+          name: "Mia Gonzalez",
+          email: "mia.gonzalez@wellsfargo.com",
+          employeeCode: "WF-5504",
+          phone: "(617) 555-0158",
+          date: "Feb 19, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100219",
+          eventId: "EVT-1016",
+          name: "William Brooks",
+          email: "william.brooks@wellsfargo.com",
+          employeeCode: "WF-8820",
+          phone: "(305) 555-0188",
+          date: "Feb 20, 2026",
+          status: "Attended"
+        },
+        {
+          id: "REG-2026-100220",
+          eventId: "EVT-1017",
+          name: "Harper Scott",
+          email: "harper.scott@wellsfargo.com",
+          employeeCode: "WF-4921",
+          phone: "(215) 555-0145",
+          date: "Feb 21, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100221",
+          eventId: "EVT-1018",
+          name: "Henry Adams",
+          email: "henry.adams@wellsfargo.com",
+          employeeCode: "WF-2377",
+          phone: "(619) 555-0166",
+          date: "Feb 21, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100222",
+          eventId: "EVT-1019",
+          name: "Evelyn Carter",
+          email: "evelyn.carter@wellsfargo.com",
+          employeeCode: "WF-6032",
+          phone: "(512) 555-0122",
+          date: "Feb 22, 2026",
+          status: "Attended"
+        },
+        {
+          id: "REG-2026-100223",
+          eventId: "EVT-1020",
+          name: "Daniel Nguyen",
+          email: "daniel.nguyen@wellsfargo.com",
+          employeeCode: "WF-7703",
+          phone: "(614) 555-0171",
+          date: "Feb 23, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100224",
+          eventId: "EVT-1021",
+          name: "Grace Hill",
+          email: "grace.hill@wellsfargo.com",
+          employeeCode: "WF-4102",
+          phone: "(615) 555-0129",
+          date: "Feb 24, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100225",
+          eventId: "EVT-1022",
+          name: "Logan Wright",
+          email: "logan.wright@wellsfargo.com",
+          employeeCode: "WF-3019",
+          phone: "(702) 555-0137",
+          date: "Feb 25, 2026",
+          status: "Registered"
+        },
+        {
+          id: "REG-2026-100226",
+          eventId: "EVT-1024",
+          name: "Chloe Baker",
+          email: "chloe.baker@wellsfargo.com",
+          employeeCode: "WF-9182",
+          phone: "(503) 555-0195",
+          date: "Feb 26, 2026",
+          status: "Attended"
+        },
+        {
+          id: "REG-2026-100227",
+          eventId: "EVT-1025",
+          name: "Jackson Reed",
+          email: "jackson.reed@wellsfargo.com",
+          employeeCode: "WF-6650",
+          phone: "(919) 555-0116",
+          date: "Feb 27, 2026",
+          status: "Registered"
+        }
+      ]
     };
 
+    const state = loadState();
+    let selectedEvent = null;
+    let chartsInitialized = false;
+    let searchQuery = "";
+
+    function deriveEndTime(startTime) {
+      const match = String(startTime || "").trim().match(/^(\d{1,2}):(\d{2})\s*([AP]M)$/i);
+      if (!match) return "10:30 AM";
+      let hours = parseInt(match[1], 10) % 12;
+      const mins = parseInt(match[2], 10);
+      const period = match[3].toUpperCase();
+      if (period === "PM") hours += 12;
+      const totalMinutes = (hours * 60 + mins + 90) % (24 * 60);
+      const outHours24 = Math.floor(totalMinutes / 60);
+      const outMins = totalMinutes % 60;
+      const outPeriod = outHours24 >= 12 ? "PM" : "AM";
+      const outHours12 = outHours24 % 12 || 12;
+      return `${outHours12}:${String(outMins).padStart(2, "0")} ${outPeriod}`;
+    }
+
+    function normalizeEvent(event) {
+      if (!event || typeof event !== "object") return null;
+      const datetime = String(event.datetime || "").trim();
+      const [datePartRaw, timePartRaw] = datetime.split("·");
+      const datePart = (event.date || datePartRaw || "Mar 1, 2026").trim();
+      const startTime = (event.startTime || timePartRaw || "9:00 AM").trim();
+      const endTime = (event.endTime || deriveEndTime(startTime)).trim();
+      return {
+        id: event.id || `EVT-${Date.now()}`,
+        title: event.title || "Untitled Event",
+        datetime: `${datePart} · ${startTime}`,
+        date: datePart,
+        startTime,
+        endTime,
+        location: event.location || "TBD",
+        description: event.description || "No description provided.",
+        type: event.type === "Private" ? "Private" : "Public",
+        code: event.code || "",
+        hidden: Boolean(event.hidden),
+        cover: event.cover || "https://picsum.photos/seed/wfdefault/900/600"
+      };
+    }
+
+    function normalizeCatalogueItem(item) {
+      if (!item || typeof item !== "object") return null;
+      return {
+        id: item.id || `CAT-${Date.now()}`,
+        sourceEventId: item.sourceEventId || "",
+        title: item.title || "Past Event",
+        date: item.date || "Jan 1, 2026",
+        location: item.location || "TBD",
+        summary: item.summary || item.description || "Event summary unavailable.",
+        image: item.image || item.cover || "https://picsum.photos/seed/wfcat/900/600"
+      };
+    }
+
+    function isEventLike(item) {
+      return Boolean(item && (item.type || item.datetime || String(item.id || "").startsWith("EVT-")));
+    }
+
+    function formatEventSchedule(event) {
+      const normalized = normalizeEvent(event);
+      return `${normalized.date} · ${normalized.startTime} to ${normalized.endTime}`;
+    }
+
     function loadState() {
-      const saved = localStorage.getItem("wfEventsState");
-      if (saved) state = JSON.parse(saved);
+      const seedEvents = [
+        ...seedData.events,
+        ...seedData.catalogue.filter(isEventLike)
+      ].map(normalizeEvent).filter(Boolean);
+      const seedCatalogue = seedData.catalogue
+        .filter((item) => !isEventLike(item))
+        .map(normalizeCatalogueItem)
+        .filter(Boolean);
+
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          const parsedEvents = (parsed.events || []).map(normalizeEvent).filter(Boolean);
+          const parsedCatalogue = (parsed.catalogue || []).map(normalizeCatalogueItem).filter(Boolean);
+          const parsedRegistrations = parsed.registrations || [];
+
+          const mergeById = (list, seedList) => {
+            const map = new Map(seedList.map((item) => [item.id, item]));
+            list.forEach((item) => {
+              if (item && item.id) map.set(item.id, item);
+            });
+            return Array.from(map.values());
+          };
+
+          const merged = {
+            events: mergeById(parsedEvents, seedEvents),
+            registrations: mergeById(parsedRegistrations, seedData.registrations),
+            catalogue: mergeById(parsedCatalogue, seedCatalogue)
+          };
+          if (!merged.events.some((e) => e.type === "Public" && !e.hidden)) {
+            merged.events.slice(0, 5).forEach((e) => {
+              e.type = "Public";
+              e.hidden = false;
+            });
+          }
+          return merged;
+        } catch (err) {
+          localStorage.removeItem(STORAGE_KEY);
+        }
+      }
+
+      const initial = {
+        events: seedEvents,
+        registrations: [...seedData.registrations],
+        catalogue: seedCatalogue
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
+      return JSON.parse(JSON.stringify(initial));
     }
 
     function saveState() {
-      localStorage.setItem("wfEventsState", JSON.stringify(state));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     }
 
-    function generateRegId() {
-      return "REG-" + Date.now() + "-" + Math.floor(Math.random() * 1000);
-    }
-
-    const today = new Date().toLocaleDateString();
-
-    function on(id, event, handler) {
+    function on(id, evt, handler) {
       const el = document.getElementById(id);
-      if (el) el.addEventListener(event, handler);
+      if (el) el.addEventListener(evt, handler);
+    }
+
+    function publicEvents() {
+      return state.events.filter((e) => e.type === "Public" && !e.hidden);
+    }
+
+        function renderOngoing() {
+      const carousel = document.getElementById("ongoingCarousel");
+      if (!carousel) return;
+      carousel.innerHTML = "";
+
+      const today = new Date();
+      const start = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      const end = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+
+      let ongoing = publicEvents().filter((event) => {
+        const datePart = event.datetime.split('·')[0].trim();
+        const parsed = new Date(datePart);
+        return !isNaN(parsed) && parsed >= start && parsed < end;
+      });
+
+      if (!ongoing.length) {
+        ongoing = publicEvents().slice(0, 4);
+      }
+
+      if (!ongoing.length) {
+        const empty = document.createElement("div");
+        empty.className = "text-sm text-slate-400";
+        empty.textContent = "No events in progress right now.";
+        carousel.appendChild(empty);
+        return;
+      }
+
+      ongoing.forEach((event) => {
+        const card = document.createElement("button");
+        card.className = "min-w-[280px] bg-white rounded-2xl shadow-sm overflow-hidden text-left";
+        card.innerHTML = `
+          <div class="h-36 bg-cover bg-center" style="background-image:url('${event.cover || 'https://picsum.photos/seed/wfdefault/900/600'}')"></div>
+          <div class="p-4">
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">${formatEventSchedule(event)}</p>
+            <h3 class="text-base font-semibold mt-1">${event.title}</h3>
+            <p class="text-xs text-slate-500 mt-1">${event.location}</p>
+          </div>
+        `;
+        card.addEventListener("click", () => openEventModal(event.id, { allowRegistration: false }));
+        carousel.appendChild(card);
+      });
+    }
+
+    function renderEvents() {
+      const grid = document.getElementById("eventGrid");
+      if (!grid) return;
+      grid.innerHTML = "";
+      const filtered = publicEvents().filter((event) => {
+        if (!searchQuery) return true;
+        const text = `${event.title} ${event.location} ${event.description || ""}`.toLowerCase();
+        return text.includes(searchQuery.toLowerCase());
+      });
+      filtered.forEach((event) => {
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-xl shadow-sm overflow-hidden flex flex-col transition-all duration-200 hover:scale-[1.02]";
+        card.innerHTML = `
+          <div class="h-40 bg-cover bg-center" style="background-image:url('${event.cover || 'https://picsum.photos/seed/wfdefault/900/600'}')"></div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-lg font-semibold">${event.title}</h3>
+            <div class="mt-2 text-sm text-slate-500 space-y-1">
+              <div>📅 ${formatEventSchedule(event)}</div>
+              <div>📍 ${event.location}</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-600 line-clamp-3">${event.description}</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="px-2 py-1 text-xs rounded-full bg-red-50 text-red-700 font-semibold">Public</span>
+              <button class="px-4 py-2 rounded-lg border border-red-200 text-red-700 text-sm font-semibold hover:bg-red-50" data-event-id="${event.id}">View Details</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      grid.querySelectorAll("button[data-event-id]").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const eventId = e.currentTarget.getAttribute("data-event-id");
+          openEventModal(eventId);
+        });
+      });
+    }
+
+    function openEventModal(eventId, options = {}) {
+      const event = state.events.find((ev) => ev.id === eventId);
+      if (!event) return;
+      const allowRegistration = options.allowRegistration !== false;
+      const participantCount = state.registrations.filter((r) => r.eventId === event.id).length;
+      selectedEvent = event;
+      document.getElementById("eventModalImage").style.backgroundImage = `url('${event.cover}')`;
+      document.getElementById("eventModalTitle").textContent = event.title;
+      document.getElementById("eventModalMeta").textContent = `${formatEventSchedule(event)} · ${event.location}`;
+      document.getElementById("eventModalDesc").textContent = event.description;
+      document.getElementById("eventModalParticipants").textContent = participantCount;
+      const modalBody = document.getElementById("eventModalBody");
+      const infoPanel = document.getElementById("eventModalInfoPanel");
+      if (modalBody) {
+        modalBody.classList.toggle("md:grid-cols-1", !allowRegistration);
+        modalBody.classList.toggle("md:grid-cols-2", allowRegistration);
+      }
+      if (infoPanel) {
+        infoPanel.classList.toggle("items-center", !allowRegistration);
+        infoPanel.classList.toggle("text-center", !allowRegistration);
+      }
+      document.getElementById("eventModalRegisterPanel").classList.toggle("hidden", !allowRegistration);
+      showModal("eventModal");
     }
 
     function showModal(id) {
-      document.getElementById(id)?.classList.remove("hidden");
+      document.getElementById("modalBackdrop").classList.remove("hidden");
+      const modal = document.getElementById(id);
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
     }
 
     function closeModal(id) {
-      document.getElementById(id)?.classList.add("hidden");
+      document.getElementById("modalBackdrop").classList.add("hidden");
+      const modal = document.getElementById(id);
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
     }
 
     function closeAllModals() {
-      document.querySelectorAll(".modal").forEach(m => m.classList.add("hidden"));
+      ["eventModal", "createEventModal", "qrModal", "catalogueModal", "catalogueLookupModal", "adminEventModal"].forEach((id) => {
+        document.getElementById(id).classList.add("hidden");
+        document.getElementById(id).classList.remove("flex");
+      });
+      document.getElementById("modalBackdrop").classList.add("hidden");
     }
 
-    // ───────────────────────────────────────────────
-    //  DASHBOARD RENDER – updated (no dropdown, top 5 only)
-    // ───────────────────────────────────────────────
-    function renderDashboard() {
-      if (!window.__wfCharts) window.__wfCharts = {};
-      const charts = window.__wfCharts;
+        function generateRegId() {
+      const random = Math.floor(100000 + Math.random() * 900000);
+      return `REG-2026-${random}`;
+    }
 
-      const events = state.events;
-      const registrations = state.registrations;
+    function showQrScreen(registration) {
+      closeAllModals();
+      showModal("qrModal");
+      document.getElementById("qrParticipant").textContent = registration.name;
+      document.getElementById("qrEvent").textContent = selectedEvent.title;
+    }
 
-      // Stats
+    function closeQrModal() {
+      closeModal("qrModal");
+    }
+
+    function renderEventsList() {
+      const list = document.getElementById("eventsList");
+      list.innerHTML = "";
+      state.events.forEach((event) => {
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-xl shadow-sm overflow-hidden cursor-pointer transition hover:scale-[1.02]";
+        card.innerHTML = `
+          <div class="h-28 bg-cover bg-center" style="background-image:url('${event.cover || 'https://picsum.photos/seed/wfdefault/900/600'}')"></div>
+          <div class="p-4">
+            <div class="flex items-center justify-between gap-2">
+              <h3 class="font-semibold">${event.title}</h3>
+              <select data-visibility-id="${event.id}" class="text-xs px-2 py-1 rounded-full border border-slate-200 bg-white">
+                <option value="visible" ${event.hidden ? '' : 'selected'}>Published</option>
+                <option value="hidden" ${event.hidden ? 'selected' : ''}>Hidden</option>
+              </select>
+            </div>
+            <p class="text-xs text-slate-500 mt-1">${formatEventSchedule(event)}</p>
+            <p class="text-xs text-slate-500">${event.location}</p>
+          </div>
+        `;
+        card.addEventListener("click", () => {
+          selectedEvent = event;
+          renderEventDetail();
+        });
+        list.appendChild(card);
+      });
+
+      list.querySelectorAll('[data-visibility-id]').forEach((select) => {
+        select.addEventListener('change', (e) => {
+          const id = e.currentTarget.getAttribute('data-visibility-id');
+          const event = state.events.find((ev) => ev.id === id);
+          if (!event) return;
+          event.hidden = e.currentTarget.value === 'hidden';
+          saveState();
+          renderEvents();
+          renderEventsList();
+        });
+      });
+    }
+
+    function renderEventDetail() {
+      if (!selectedEvent) return;
+
+      document.getElementById("adminEventTitle").textContent = selectedEvent.title;
+      document.getElementById("adminEventMeta").textContent = `${formatEventSchedule(selectedEvent)} · ${selectedEvent.location}`;
+      document.getElementById("adminEventDesc").textContent = selectedEvent.description;
+
+      const toggleBtn = document.getElementById("adminEventToggleBtn");
+      toggleBtn.textContent = selectedEvent.hidden ? "Show in Participant View" : "Hide from Participant View";
+      toggleBtn.onclick = () => {
+        selectedEvent.hidden = !selectedEvent.hidden;
+        saveState();
+        renderEvents();
+        renderEventsList();
+        renderEventDetail();
+      };
+
+      document.getElementById("adminEventEditBtn").onclick = () => {
+        showModal("createEventModal");
+        prefillEventForm();
+      };
+
+      document.getElementById("adminEventDeleteBtn").onclick = () => {
+        state.events = state.events.filter((e) => e.id !== selectedEvent.id);
+        state.registrations = state.registrations.filter((r) => r.eventId !== selectedEvent.id);
+        selectedEvent = null;
+        saveState();
+        closeModal("adminEventModal");
+        renderEvents();
+        renderEventsList();
+        renderParticipantFilters();
+        renderParticipants();
+        renderDashboard();
+      };
+
+      const tbody = document.getElementById("adminEventParticipants");
+      tbody.innerHTML = '';
+      const regs = state.registrations.filter((r) => r.eventId === selectedEvent.id);
+      regs.forEach((r) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td class="px-3 py-2">${r.name}</td>
+          <td class="px-3 py-2">${r.email}</td>
+          <td class="px-3 py-2">${r.status}</td>
+        `;
+        tbody.appendChild(row);
+      });
+
+      showModal("adminEventModal");
+    }
+
+    function prefillEventForm() {
+      if (!selectedEvent) return;
+      const form = document.getElementById("createEventForm");
+      form.title.value = selectedEvent.title;
+      form.datetime.value = selectedEvent.date || selectedEvent.datetime.split("·")[0].trim();
+      form.startTime.value = selectedEvent.startTime || selectedEvent.datetime.split("·")[1]?.trim() || "";
+      form.endTime.value = selectedEvent.endTime || "";
+      form.location.value = selectedEvent.location;
+      form.description.value = selectedEvent.description;
+    }
+    function renderParticipants() {
+      const table = document.getElementById("participantsTable");
+      if (!table) return;
+      const searchEl = document.getElementById("participantSearch");
+      const statusEl = document.getElementById("participantStatus");
+      const eventEl = document.getElementById("participantEvent");
+      const query = (searchEl ? searchEl.value : "").toLowerCase().trim();
+      const status = statusEl ? statusEl.value : "all";
+      const eventFilter = eventEl ? eventEl.value : "all";
+      table.innerHTML = "";
+      state.registrations
+        .filter((reg) => {
+          const event = state.events.find((ev) => ev.id === reg.eventId);
+          const text = `${reg.name} ${reg.email} ${event?.title || ""}`.toLowerCase();
+          const matchQuery = text.includes(query);
+          const matchStatus = status === "all" || reg.status === status;
+          const matchEvent = eventFilter === "all" || reg.eventId === eventFilter;
+          return matchQuery && matchStatus && matchEvent;
+        })
+        .forEach((reg, index) => {
+          const event = state.events.find((ev) => ev.id === reg.eventId);
+          const row = document.createElement("tr");
+          row.className = `${index % 2 === 0 ? "bg-white" : "bg-slate-50/60"} hover:bg-red-50/40 transition-colors`;
+          row.innerHTML = `
+            <td class="px-4 py-3 font-medium text-slate-900">${reg.name}</td>
+            <td class="px-4 py-3 text-slate-600">${reg.email}</td>
+            <td class="px-4 py-3 text-slate-700">${reg.employeeCode}</td>
+            <td class="px-4 py-3 text-slate-700">${reg.phone}</td>
+            <td class="px-4 py-3 text-slate-700">${event?.title || ""}</td>
+            <td class="px-4 py-3 text-slate-600">${reg.date}</td>
+            <td class="px-4 py-3">
+              <span class="px-2 py-1 rounded-full text-xs font-semibold ${reg.status === "Attended" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}">${reg.status}</span>
+            </td>
+            <td class="px-4 py-3 text-xs text-slate-500 font-mono">${reg.id}</td>
+          `;
+          table.appendChild(row);
+        });
+    }
+    function renderCatalogue() {
+      const carousel = document.getElementById("catalogueCarousel");
+      if (carousel) {
+        carousel.innerHTML = "";
+        state.catalogue.forEach((item) => {
+          const slide = document.createElement("div");
+          slide.className = "min-w-full";
+          slide.innerHTML = `
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+              <div class="h-72 md:h-96 bg-cover bg-center" style="background-image:url('${item.image || 'https://picsum.photos/seed/wfcat/900/600'}')"></div>
+              <div class="p-6">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">${item.date} · ${item.location}</p>
+                <h3 class="text-xl font-semibold mt-2">${item.title}</h3>
+                <p class="text-sm text-slate-600 mt-2">${item.summary}</p>
+              </div>
+            </div>
+          `;
+          carousel.appendChild(slide);
+        });
+        carousel.dataset.index = "0";
+        carousel.style.transform = "translateX(0%)";
+      }
+
+      const adminGrid = document.getElementById("catalogueAdminGrid");
+      if (adminGrid) {
+        adminGrid.innerHTML = "";
+        state.catalogue.forEach((item) => {
+          const card = document.createElement("div");
+          card.className = "bg-white rounded-xl shadow-sm overflow-hidden";
+          card.innerHTML = `
+            <div class="h-28 bg-cover bg-center" style="background-image:url('${item.image || 'https://picsum.photos/seed/wfcat/900/600'}')"></div>
+            <div class="p-4">
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">${item.date}</p>
+              <h3 class="font-semibold">${item.title}</h3>
+              <p class="text-xs text-slate-500 mt-1">${item.location}</p>
+              <button class="mt-3 text-xs text-red-600" data-remove-cat="${item.id}">Remove</button>
+            </div>
+          `;
+          adminGrid.appendChild(card);
+        });
+
+        adminGrid.querySelectorAll('[data-remove-cat]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-remove-cat');
+            state.catalogue = state.catalogue.filter((c) => c.id !== id);
+            saveState();
+            renderCatalogue();
+          });
+        });
+      }
+    }
+
+    function addEventToCatalogue(eventId) {
+      const event = state.events.find((e) => e.id === eventId);
+      if (!event) return;
+      const exists = state.catalogue.some((c) => c.sourceEventId === eventId);
+      if (exists) return;
+      const newItem = {
+        id: `CAT-${Date.now()}`,
+        sourceEventId: event.id,
+        title: event.title,
+        date: event.date || event.datetime.split("·")[0].trim(),
+        location: event.location,
+        summary: event.description,
+        image: event.cover || "https://picsum.photos/seed/wfcat/900/600"
+      };
+      state.catalogue.unshift(newItem);
+      saveState();
+      renderCatalogue();
+      renderCatalogueLookup(document.getElementById("catalogueLookupSearch")?.value || "");
+    }
+
+    function renderCatalogueLookup(query = "") {
+      const list = document.getElementById("catalogueLookupList");
+      if (!list) return;
+      const q = query.trim().toLowerCase();
+      const existingIds = new Set(state.catalogue.map((c) => c.sourceEventId).filter(Boolean));
+      const eligible = state.events.filter((event) => {
+        if (existingIds.has(event.id)) return false;
+        if (!q) return true;
+        const text = `${event.title} ${event.location} ${event.date || ""}`.toLowerCase();
+        return text.includes(q);
+      });
+      list.innerHTML = "";
+      if (!eligible.length) {
+        list.innerHTML = `<div class="text-sm text-slate-500 bg-slate-50 rounded-xl p-4">No matching events found.</div>`;
+        return;
+      }
+      eligible.forEach((event) => {
+        const card = document.createElement("div");
+        card.className = "rounded-xl border border-slate-200 p-3 flex items-center gap-3 bg-white";
+        card.innerHTML = `
+          <div class="w-20 h-16 rounded-lg bg-cover bg-center flex-shrink-0" style="background-image:url('${event.cover || "https://picsum.photos/seed/wfcat/900/600"}')"></div>
+          <div class="flex-1 min-w-0">
+            <p class="font-semibold truncate">${event.title}</p>
+            <p class="text-xs text-slate-500 truncate">${formatEventSchedule(event)} · ${event.location}</p>
+          </div>
+          <button class="px-3 py-2 rounded-lg bg-wfRed hover:bg-red-700 text-white text-sm font-semibold transition" data-add-cat-event="${event.id}">Add</button>
+        `;
+        list.appendChild(card);
+      });
+      list.querySelectorAll("[data-add-cat-event]").forEach((btn) => {
+        btn.addEventListener("click", () => addEventToCatalogue(btn.getAttribute("data-add-cat-event")));
+      });
+    }
+
+    function renderParticipantFilters() {
+      const select = document.getElementById("participantEvent");
+      if (!select) return;
+      select.innerHTML = `<option value="all">All Events</option>`;
+      state.events.forEach((event) => {
+        const option = document.createElement("option");
+        option.value = event.id;
+        option.textContent = event.title;
+        select.appendChild(option);
+      });
+    }
+
+    function parseEventDate(event) {
+      const datePart = (event.date || event.datetime.split('·')[0]).trim();
+      const parsed = new Date(datePart);
+      return isNaN(parsed) ? null : parsed;
+    }
+
+    let countdownSeconds = (1 * 24 * 60 * 60) + (12 * 60 * 60) + (41 * 60) + 3;
+
+    function updateCountdown() {
+      const upcoming = state.events
+        .map((e) => ({ event: e, date: parseEventDate(e) }))
+        .filter((item) => item.date)
+        .sort((a, b) => a.date - b.date)[0];
+
+      if (!upcoming) return;
+      document.getElementById("countdownEventName").textContent = upcoming.event.title;
+
+      if (countdownSeconds < 0) countdownSeconds = 0;
+      const days = Math.floor(countdownSeconds / (1000 * 60 * 60 * 24 / 1000));
+      const hours = Math.floor((countdownSeconds / 3600) % 24);
+      const minutes = Math.floor((countdownSeconds / 60) % 60);
+      const seconds = Math.floor(countdownSeconds % 60);
+
+      const pad = (n) => String(n).padStart(2, "0");
+      document.getElementById("countdownDays").textContent = pad(days);
+      document.getElementById("countdownHours").textContent = pad(hours);
+      document.getElementById("countdownMinutes").textContent = pad(minutes);
+      document.getElementById("countdownSeconds").textContent = pad(seconds);
+
+      if (countdownSeconds > 0) countdownSeconds -= 1;
+    }
+
+    function renderLiveMonitoring() {
+      const table = document.getElementById("liveMonitoringTable");
+      const searchInput = document.getElementById("liveMonitoringSearch");
+      const eventEl = document.getElementById("liveMonitoringEvent");
+      const checkedInEl = document.getElementById("liveMonitoringCheckedIn");
+      const expectedEl = document.getElementById("liveMonitoringExpected");
+      const updatedEl = document.getElementById("liveMonitoringUpdated");
+      if (!table) return;
+
+      const query = (searchInput && searchInput.value) ? searchInput.value.toLowerCase().trim() : "";
+      let regs = state.registrations.filter((reg) => {
+        const event = state.events.find((ev) => ev.id === reg.eventId);
+        const text = `${reg.name} ${reg.email} ${reg.employeeCode || ""} ${event?.title || ""}`.toLowerCase();
+        return !query || text.includes(query);
+      });
+
+      if (eventEl) {
+        const firstEvent = state.events[0];
+        eventEl.textContent = firstEvent ? firstEvent.title : "—";
+      }
+      if (checkedInEl) checkedInEl.textContent = state.registrations.filter((r) => r.status === "Attended").length;
+      if (expectedEl) expectedEl.textContent = state.registrations.length;
+      if (updatedEl) updatedEl.textContent = "Last updated: " + new Date().toLocaleTimeString();
+
+      table.innerHTML = "";
+      regs.forEach((reg, index) => {
+        const event = state.events.find((ev) => ev.id === reg.eventId);
+        const row = document.createElement("tr");
+        row.className = `${index % 2 === 0 ? "bg-white" : "bg-slate-50/60"} hover:bg-red-50/40 transition-colors`;
+        row.innerHTML = `
+          <td class="px-4 py-3 font-medium text-slate-900">${reg.name}</td>
+          <td class="px-4 py-3 text-slate-600">${reg.email}</td>
+          <td class="px-4 py-3 text-slate-700 font-mono text-xs">${reg.employeeCode || "—"}</td>
+          <td class="px-4 py-3 text-slate-700">${event?.title || "—"}</td>
+          <td class="px-4 py-3">
+            <span class="px-2 py-1 rounded-full text-xs font-semibold ${reg.status === "Attended" ? "bg-green-100 text-green-700" : "bg-amber-100 text-amber-700"}">${reg.status}</span>
+          </td>
+        `;
+        table.appendChild(row);
+      });
+    }
+
+    function getEventDate(event) {
+      const datePart = (event.date || event.datetime.split('·')[0]).trim();
+      const parsed = new Date(datePart);
+      return isNaN(parsed) ? null : parsed;
+    }
+
+    function toLocalISODate(date) {
+      const y = date.getFullYear();
+      const m = String(date.getMonth() + 1).padStart(2, "0");
+      const d = String(date.getDate()).padStart(2, "0");
+      return `${y}-${m}-${d}`;
+    }
+
+    function renderCalendarEvents(selectedDate) {
+      const list = document.getElementById("calendarEventList");
+      const participantList = document.getElementById("calendarParticipantList");
+      const participantSearch = document.getElementById("calendarParticipantSearch");
+      const selectedDateEl = document.getElementById("calendarSelectedDate");
+      if (!list || !participantList) return;
+      list.innerHTML = "";
+      participantList.innerHTML = "";
+      if (participantSearch) participantSearch.value = "";
+      const selectedStr = selectedDate ? selectedDate.toDateString() : null;
+      if (selectedDateEl && selectedDate) {
+        selectedDateEl.textContent = selectedDate.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+      } else if (selectedDateEl) {
+        selectedDateEl.textContent = "—";
+      }
+      const events = state.events.filter((event) => {
+        const date = getEventDate(event);
+        return date && date.toDateString() === selectedStr;
+      });
+      if (!events.length) {
+        list.innerHTML = '<div class="py-6 text-center text-slate-400 text-sm rounded-xl bg-slate-50">No events on this date.</div>';
+        participantList.innerHTML = '<div class="py-6 text-center text-slate-400 text-sm rounded-xl bg-slate-50">No participants to show.</div>';
+        return;
+      }
+      const participants = [];
+      events.forEach((event) => {
+        const row = document.createElement('div');
+        row.className = 'rounded-xl border border-slate-100 p-3.5 hover:border-wfRed/20 hover:bg-red-50/30 transition-colors';
+        row.innerHTML = `
+          <div class="flex items-start gap-2">
+            <span class="w-8 h-8 rounded-lg bg-wfRed/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-wfRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </span>
+            <div class="min-w-0">
+              <div class="font-semibold text-slate-800">${event.title}</div>
+              <div class="text-xs text-slate-500 mt-0.5">${formatEventSchedule(event)} · ${event.location}</div>
+              ${event.description ? `<div class="text-xs text-slate-600 mt-1.5 line-clamp-2">${event.description}</div>` : ""}
+            </div>
+          </div>`;
+        list.appendChild(row);
+        state.registrations
+          .filter((r) => r.eventId === event.id)
+          .forEach((r) => participants.push(r));
+      });
+
+      const renderParticipantRows = (rows) => {
+        participantList.innerHTML = "";
+        if (!rows.length) {
+          participantList.innerHTML = '<div class="py-6 text-center text-slate-400 text-sm rounded-xl bg-slate-50">No participants to show.</div>';
+          return;
+        }
+        rows.slice(0, 10).forEach((r) => {
+          const p = document.createElement('div');
+          p.className = 'flex items-center justify-between gap-2 py-2.5 px-3 rounded-xl hover:bg-slate-50 transition-colors';
+          const initial = (r.name || "?").charAt(0).toUpperCase();
+          p.innerHTML = `
+            <div class="flex items-center gap-2.5 min-w-0">
+              <span class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 text-xs font-semibold flex items-center justify-center flex-shrink-0">${initial}</span>
+              <span class="font-medium text-slate-800 truncate">${r.name}</span>
+            </div>
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full flex-shrink-0 ${r.status === "Attended" ? "bg-green-100 text-green-700" : "bg-slate-100 text-slate-500"}">${r.status}</span>`;
+          participantList.appendChild(p);
+        });
+      };
+
+      renderParticipantRows(participants);
+
+      if (participantSearch) {
+        participantSearch.oninput = (e) => {
+          const q = e.target.value.toLowerCase().trim();
+          if (!q) {
+            renderParticipantRows(participants);
+            return;
+          }
+          const filtered = participants.filter((p) =>
+            p.name.toLowerCase().includes(q) || p.email.toLowerCase().includes(q) || (p.employeeCode && p.employeeCode.toLowerCase().includes(q))
+          );
+          renderParticipantRows(filtered);
+        };
+      }
+    }
+
+    let calendarInstance = null;
+    function initCalendar() {
+      const container = document.getElementById("fullCalendar");
+      if (!container || typeof FullCalendar === 'undefined') return;
+      if (calendarInstance) {
+        calendarInstance.destroy();
+      }
+      const events = state.events.map((event) => {
+        const date = getEventDate(event);
+        return date ? { title: event.title, start: toLocalISODate(date) } : null;
+      }).filter(Boolean);
+
+      calendarInstance = new FullCalendar.Calendar(container, {
+        initialView: 'dayGridMonth',
+        height: 'auto',
+        events,
+        dateClick: function(info) {
+          renderCalendarEvents(new Date(info.dateStr));
+        }
+      });
+      calendarInstance.render();
+      renderCalendarEvents(new Date());
+    }
+
+function renderDashboard() {
+      const filterSelect = document.getElementById("dashboardEventFilter");
+      const checkinSelect = document.getElementById("checkinEventFilter");
+      const prevRegFilter = filterSelect ? filterSelect.value : "all";
+      const prevCheckinFilter = checkinSelect ? checkinSelect.value : "all";
+
+      if (filterSelect) {
+        filterSelect.innerHTML = `<option value="all">All Events</option>`;
+        state.events.forEach((event) => {
+          const opt = document.createElement("option");
+          opt.value = event.id;
+          opt.textContent = event.title;
+          filterSelect.appendChild(opt);
+        });
+        if (state.events.some((e) => e.id === prevRegFilter)) filterSelect.value = prevRegFilter;
+      }
+      if (checkinSelect) {
+        checkinSelect.innerHTML = `<option value="all">All Events</option>`;
+        state.events.forEach((event) => {
+          const opt = document.createElement("option");
+          opt.value = event.id;
+          opt.textContent = event.title;
+          checkinSelect.appendChild(opt);
+        });
+        if (state.events.some((e) => e.id === prevCheckinFilter)) checkinSelect.value = prevCheckinFilter;
+      }
+
+      const selected = filterSelect ? filterSelect.value : "all";
+      const events = selected === "all" ? state.events : state.events.filter((e) => e.id === selected);
+      const registrations = selected === "all"
+        ? state.registrations
+        : state.registrations.filter((r) => r.eventId === selected);
+
       const totalEvents = events.length;
       const totalRegs = registrations.length;
-      const totalCheckedIn = registrations.filter(r => r.status === "Attended").length;
+      const totalCheckedIn = registrations.filter((r) => r.status === "Attended").length;
       const attendanceRate = totalRegs ? Math.round((totalCheckedIn / totalRegs) * 100) : 0;
-      const todaysRegs = registrations.filter(r => r.date === today).length;
-      const todaysCheckins = registrations.filter(r => r.date === today && r.status === "Attended").length;
+      const today = new Date().toLocaleDateString();
+      const todaysRegs = registrations.filter((r) => r.date === today).length;
+      const todaysCheckins = registrations.filter((r) => r.date === today && r.status === "Attended").length;
 
       document.getElementById("statEvents").textContent = totalEvents;
       document.getElementById("statRegistrations").textContent = totalRegs;
@@ -613,22 +2388,29 @@
       document.getElementById("statTodayRegs").textContent = todaysRegs;
       document.getElementById("statTodayCheckins").textContent = `${todaysCheckins} check-ins today`;
 
-      // Registrations per Event – Top 5
-      const eventCounts = events.map(e => ({
+      const eventCounts = events.map((e) => ({
         title: e.title,
-        count: registrations.filter(r => r.eventId === e.id).length
+        count: registrations.filter((r) => r.eventId === e.id).length
       }));
-
       eventCounts.sort((a, b) => b.count - a.count);
-      const top5 = eventCounts.slice(0, 5);
+      const labels = eventCounts.map((x) => x.title);
+      const registrationsByEvent = eventCounts.map((x) => x.count);
 
-      const labels = top5.map(x => x.title);
-      const data = top5.map(x => x.count);
+      // Check-in chart filter
+      const checkinSelected = checkinSelect ? checkinSelect.value : "all";
+      const checkinRegs = checkinSelected === "all"
+        ? state.registrations
+        : state.registrations.filter((r) => r.eventId === checkinSelected);
+      const checkedInCount = checkinRegs.filter((r) => r.status === "Attended").length;
+      const notCheckedInCount = Math.max(checkinRegs.length - checkedInCount, 0);
+
+      if (!window.__wfCharts) window.__wfCharts = {};
+      const charts = window.__wfCharts;
 
       const regCtx = document.getElementById("registrationsChart");
       if (charts.registrationsChart) {
         charts.registrationsChart.data.labels = labels;
-        charts.registrationsChart.data.datasets[0].data = data;
+        charts.registrationsChart.data.datasets[0].data = registrationsByEvent;
         charts.registrationsChart.update();
       } else if (regCtx) {
         charts.registrationsChart = new Chart(regCtx, {
@@ -637,10 +2419,8 @@
             labels,
             datasets: [{
               label: "Registrations",
-              data,
-              backgroundColor: "rgba(212,28,44,0.75)",
-              borderColor: "rgba(212,28,44,0.9)",
-              borderWidth: 1,
+              data: registrationsByEvent,
+              backgroundColor: "rgba(212,28,44,0.8)",
               borderRadius: 6,
               borderSkipped: false
             }]
@@ -648,26 +2428,19 @@
           options: {
             indexAxis: "y",
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
             plugins: { legend: { display: false } },
             scales: {
-              x: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: "rgba(0,0,0,0.05)" } },
-              y: { grid: { display: false }, ticks: { font: { size: 12 }, maxRotation: 0, autoSkip: false } }
+              x: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: "rgba(0,0,0,0.06)" } },
+              y: {
+                grid: { display: false },
+                ticks: { font: { size: 11 }, maxRotation: 0, autoSkip: false }
+              }
             },
-            layout: { padding: { left: 8, right: 16, top: 8, bottom: 8 } }
+            layout: { padding: { left: 4, right: 8 } }
           }
         });
       }
-
-      // Check-in chart (still filterable)
-      const checkinSelect = document.getElementById("checkinEventFilter");
-      const checkinSelected = checkinSelect?.value || "all";
-      const checkinRegs = checkinSelected === "all"
-        ? registrations
-        : registrations.filter(r => r.eventId === checkinSelected);
-
-      const checkedInCount = checkinRegs.filter(r => r.status === "Attended").length;
-      const notCheckedInCount = Math.max(checkinRegs.length - checkedInCount, 0);
 
       const checkCtx = document.getElementById("checkinChart");
       if (charts.checkinChart) {
@@ -678,47 +2451,318 @@
           type: "doughnut",
           data: {
             labels: ["Checked-in", "Not Checked-in"],
-            datasets: [{ data: [checkedInCount, notCheckedInCount], backgroundColor: ["#16A34A", "#D41C2C"], borderWidth: 0 }]
+            datasets: [{
+              data: [checkedInCount, notCheckedInCount],
+              backgroundColor: ["#16A34A", "#D41C2C"]
+            }]
           },
-          options: { plugins: { legend: { display: false } }, cutout: "72%", maintainAspectRatio: false }
+          options: { plugins: { legend: { display: false } }, cutout: "70%" }
         });
       }
 
+      const topEventsList = document.getElementById("topEventsList");
+      if (topEventsList) {
+        topEventsList.innerHTML = "";
+        const top = events
+          .map((e) => ({
+            event: e,
+            count: registrations.filter((r) => r.eventId === e.id).length
+          }))
+          .sort((a, b) => b.count - a.count)
+          .slice(0, 5);
+        top.forEach((item, idx) => {
+          const row = document.createElement("div");
+          row.className = "flex items-center justify-between gap-3 py-2.5 px-3 rounded-xl hover:bg-slate-50 transition-colors";
+          row.innerHTML = `
+            <div class="flex items-center gap-3 min-w-0">
+              <span class="w-7 h-7 rounded-lg bg-wfRed/10 text-wfRed text-xs font-bold flex items-center justify-center flex-shrink-0">${idx + 1}</span>
+              <div class="min-w-0">
+                <p class="font-semibold text-slate-800 truncate">${item.event.title}</p>
+                <p class="text-xs text-slate-500 truncate">${item.event.location}</p>
+              </div>
+            </div>
+            <span class="text-sm font-semibold text-slate-600 flex-shrink-0">${item.count}</span>
+          `;
+          topEventsList.appendChild(row);
+        });
+      }
+
+      const recentCheckins = document.getElementById("recentCheckins");
+      if (recentCheckins) {
+        recentCheckins.innerHTML = "";
+        registrations.filter((r) => r.status === "Attended").slice(0, 5).forEach((r) => {
+          const event = state.events.find((e) => e.id === r.eventId);
+          const row = document.createElement("div");
+          row.className = "flex items-center justify-between gap-3 py-2.5 px-3 rounded-xl hover:bg-green-50/50 transition-colors";
+          row.innerHTML = `
+            <div class="min-w-0">
+              <p class="font-semibold text-slate-800">${r.name}</p>
+              <p class="text-xs text-slate-500 truncate">${event?.title || ""}</p>
+            </div>
+            <span class="inline-flex items-center gap-1 text-xs font-semibold text-green-700 bg-green-100 px-2 py-1 rounded-full flex-shrink-0">✓ Checked-in</span>
+          `;
+          recentCheckins.appendChild(row);
+        });
+      }
+
+      if (filterSelect && !filterSelect.dataset.bound) {
+        filterSelect.dataset.bound = "true";
+        filterSelect.addEventListener("change", renderDashboard);
+      }
       if (checkinSelect && !checkinSelect.dataset.bound) {
         checkinSelect.dataset.bound = "true";
         checkinSelect.addEventListener("change", renderDashboard);
       }
-
-      // Populate check-in event filter (still needed)
-      if (checkinSelect) {
-        checkinSelect.innerHTML = `<option value="all">All Events</option>`;
-        state.events.forEach(e => {
-          const opt = document.createElement("option");
-          opt.value = e.id;
-          opt.textContent = e.title;
-          checkinSelect.appendChild(opt);
-        });
-      }
-
-      // ... you can keep adding the rest of dashboard rendering here (top events list, recent check-ins, etc.)
     }
 
-    // Placeholder for other functions (you can paste your original ones here)
-    function renderEvents() { /* ... */ }
-    function renderOngoing() { /* ... */ }
-    function renderEventsList() { /* ... */ }
-    function renderCatalogue() { /* ... */ }
-    function renderParticipants() { /* ... */ }
-    function initCalendar() { /* ... */ }
-    function updateCountdown() { /* ... */ }
-    function renderLiveMonitoring() { /* ... */ }
+    function handlePrivateJoin() {
+      const code = document.getElementById("privateCodeInput").value.trim().toUpperCase();
+      const event = state.events.find((ev) => ev.type === "Private" && ev.code.toUpperCase() === code);
+      if (event) {
+        openEventModal(event.id);
+      } else {
+        alert("Invalid private event code.");
+      }
+    }
 
-    // Init
-    loadState();
+    function initAdminNav() {
+      const buttons = document.querySelectorAll("#adminNav button, #adminNavMobile button");
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const tab = btn.getAttribute("data-tab");
+          switchAdminTab(tab);
+          buttons.forEach((b) => b.classList.remove("bg-red-50", "text-red-700", "font-semibold"));
+          btn.classList.add("bg-red-50", "text-red-700", "font-semibold");
+        });
+      });
+    }
+
+    function switchAdminTab(tab) {
+      document.querySelectorAll("#adminContent section").forEach((section) => section.classList.add("hidden"));
+      document.getElementById(`tab-${tab}`).classList.remove("hidden");
+      if (tab === "dashboard") {
+        renderDashboard();
+      }
+      if (tab === "events") renderEventsList();
+      if (tab === "participants") renderParticipants();
+      if (tab === "catalogue") renderCatalogue();
+      if (tab === "calendar") initCalendar();
+      if (tab === "scanner") renderLiveMonitoring();
+    }
+
+    on("registerForm", "submit", (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const registration = {
+        id: generateRegId(),
+        eventId: selectedEvent.id,
+        name: formData.get("fullName"),
+        email: formData.get("email"),
+        employeeCode: formData.get("employeeCode"),
+        phone: formData.get("phone"),
+        date: today,
+        status: "Registered"
+      };
+      state.registrations.unshift(registration);
+      saveState();
+      e.target.reset();
+      showQrScreen(registration);
+      renderParticipants();
+      renderDashboard();
+    });
+
+    on("searchBtn", "click", () => {
+      const input = document.getElementById("searchInput");
+      if (input) {
+        searchQuery = input.value.trim();
+        renderEvents();
+      }
+    });
+    on("searchInput", "input", () => {
+      const input = document.getElementById("searchInput");
+      if (input) {
+        searchQuery = input.value.trim();
+        renderEvents();
+      }
+    });
+    on("searchInput", "keyup", (e) => {
+      if (e.key === "Enter") {
+        const input = document.getElementById("searchInput");
+        if (input) {
+          searchQuery = input.value.trim();
+          renderEvents();
+        }
+      }
+    });
+
+    on("privateJoinBtn", "click", handlePrivateJoin);
+
+    on("roleToggle", "change", (e) => {
+      const admin = e.target.checked;
+      document.getElementById("participantView").classList.toggle("hidden", admin);
+      document.getElementById("adminView").classList.toggle("hidden", !admin);
+      if (admin) {
+        switchAdminTab("dashboard");
+      }
+    });
+
+    on("participantSearch", "input", renderParticipants);
+    on("participantStatus", "change", renderParticipants);
+    on("participantEvent", "change", renderParticipants);
+
+    on("createEventBtn", "click", () => {
+      selectedEvent = null;
+      document.getElementById("createEventForm").reset();
+      showModal("createEventModal");
+    });
+
+    on("privateCheckbox", "change", (e) => {
+      document.getElementById("privateCodeField").classList.toggle("hidden", !e.target.checked);
+    });
+
+    on("coverInput", "change", (e) => {
+      const preview = document.getElementById("imagePreview");
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (evt) => {
+        preview.style.backgroundImage = `url('${evt.target.result}')`;
+        preview.style.backgroundSize = "cover";
+        preview.style.backgroundPosition = "center";
+        preview.textContent = "";
+      };
+      reader.readAsDataURL(file);
+    });
+
+    on("createEventForm", "submit", (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const isPrivate = document.getElementById("privateCheckbox").checked;
+      const coverStyle = document.getElementById("imagePreview").style.backgroundImage;
+      const coverValue = coverStyle ? coverStyle.replace(/^url\(["']?/, "").replace(/["']?\)$/, "") : "";
+      const dateValue = String(formData.get("datetime") || "").trim();
+      const startTimeValue = String(formData.get("startTime") || "").trim();
+      const endTimeValue = String(formData.get("endTime") || "").trim();
+      const datetimeValue = `${dateValue} · ${startTimeValue}`;
+
+      if (selectedEvent) {
+        selectedEvent.title = formData.get("title");
+        selectedEvent.datetime = datetimeValue;
+        selectedEvent.date = dateValue;
+        selectedEvent.startTime = startTimeValue;
+        selectedEvent.endTime = endTimeValue;
+        selectedEvent.location = formData.get("location");
+        selectedEvent.description = formData.get("description");
+      } else {
+        const newEvent = {
+          id: `EVT-${Date.now()}`,
+          title: formData.get("title"),
+          datetime: datetimeValue,
+          date: dateValue,
+          startTime: startTimeValue,
+          endTime: endTimeValue,
+          location: formData.get("location"),
+          description: formData.get("description"),
+          type: isPrivate ? "Private" : "Public",
+          hidden: false,
+          code: isPrivate ? formData.get("code") || "PRIVATE" : "",
+          cover: coverValue || "https://picsum.photos/seed/wfdefault/900/600"
+        };
+        state.events.unshift(newEvent);
+      }
+
+      saveState();
+      e.target.reset();
+      document.getElementById("imagePreview").style.backgroundImage = "";
+      document.getElementById("imagePreview").textContent = "Preview Area";
+      document.getElementById("privateCodeField").classList.add("hidden");
+      document.getElementById("privateCheckbox").checked = false;
+      closeModal("createEventModal");
+      renderEvents();
+      renderOngoing();
+      renderEventsList();
+      renderParticipantFilters();
+      renderParticipants();
+      renderDashboard();
+    });
+
+    const catalogueImageInput = document.getElementById("catalogueImageInput");
+    const cataloguePreview = document.getElementById("cataloguePreview");
+    if (catalogueImageInput) {
+      catalogueImageInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (evt) => {
+          cataloguePreview.style.backgroundImage = `url('${evt.target.result}')`;
+          cataloguePreview.style.backgroundSize = "cover";
+          cataloguePreview.style.backgroundPosition = "center";
+          cataloguePreview.textContent = "";
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    on("addCatalogueBtn", "click", () => showModal("catalogueModal"));
+    on("openCatalogueLookupBtn", "click", () => {
+      renderCatalogueLookup();
+      showModal("catalogueLookupModal");
+    });
+    on("catalogueLookupSearch", "input", (e) => renderCatalogueLookup(e.target.value));
+
+    on("catalogueForm", "submit", (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const imageStyle = cataloguePreview.style.backgroundImage;
+        const imageValue = imageStyle ? imageStyle.replace(/^url\(["']?/, "").replace(/["']?\)$/, "") : "";
+        const newItem = {
+          id: `CAT-${Date.now()}`,
+          title: formData.get("title"),
+          date: formData.get("date"),
+          location: formData.get("location"),
+          summary: formData.get("summary"),
+          image: imageValue || "https://picsum.photos/seed/wfcat/900/600"
+        };
+        state.catalogue.unshift(newItem);
+        saveState();
+        e.target.reset();
+        cataloguePreview.style.backgroundImage = "";
+        cataloguePreview.textContent = "Preview Area";
+        closeModal("catalogueModal");
+        renderCatalogue();
+      });
+
+    let catalogueTimer = null;
+    function advanceCatalogue(direction = 1) {
+      const carousel = document.getElementById("catalogueCarousel");
+      if (!carousel || !carousel.children.length) return;
+      const total = carousel.children.length;
+      let index = parseInt(carousel.dataset.index || "0", 10);
+      index = (index + direction + total) % total;
+      carousel.dataset.index = String(index);
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+    function startCatalogueAuto() {
+      if (catalogueTimer) clearInterval(catalogueTimer);
+      catalogueTimer = setInterval(() => advanceCatalogue(1), 5000);
+    }
+
+    on("liveMonitoringSearch", "input", renderLiveMonitoring);
+
+    on("modalBackdrop", "click", closeAllModals);
+
+    renderEvents();
+    renderOngoing();
+    renderEventsList();
+    renderParticipantFilters();
+    renderParticipants();
+    renderCatalogue();
+    startCatalogueAuto();
     renderDashboard();
-    // Call your other initial render functions here...
-
-    // For a full working version you'd need to add back all the other event listeners and render functions
+    renderLiveMonitoring();
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+    initAdminNav();
   </script>
 </body>
 </html>
