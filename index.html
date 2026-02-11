@@ -528,17 +528,13 @@
               </div>
 
               <div class="bg-white rounded-2xl border border-slate-100 p-5 shadow-card">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-                  <div class="flex items-center gap-2">
-                    <span class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-wfRed">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                    </span>
-                    <h4 class="font-semibold text-slate-800">Registrations per Event</h4>
-                  </div>
-                  <select id="dashboardEventFilter" class="px-3 py-2 rounded-xl border border-slate-200 text-sm focus:border-wfRed focus:ring-1 focus:ring-wfRed/20 w-full sm:w-auto">
-                    <option value="all">All Events</option>
-                  </select>
-                </div>
+                <div class="flex items-center gap-2 mb-4">
+  <span class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-wfRed">
+    <svg ...></svg>
+  </span>
+  <h4 class="font-semibold text-slate-800">Registrations per Event</h4>
+  <span class="text-xs text-slate-400 ml-auto">Top 5 Events</span>
+</div>
                 <div class="mt-2">
                   <canvas id="registrationsChart" height="220"></canvas>
                 </div>
